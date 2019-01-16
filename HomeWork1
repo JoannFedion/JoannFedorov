@@ -1,0 +1,15 @@
+# Задание 1
+# В фамилии нечетное кол-во букв => деление на 3 или на 5
+def counter(a):
+    i = 0
+    sum = 0
+    for i in range(a+1):
+        if i % 3 == 0 or i % 5 == 0:
+            sum = i + sum
+    return(sum)
+
+a = 1000
+print (counter(a))
+
+a = 10
+print(counter(a))
